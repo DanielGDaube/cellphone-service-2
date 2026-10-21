@@ -46,6 +46,9 @@ public class CellPhoneApplication {
         display(myCellPhone1);
         display(myCellPhone2);
 
+        // Dial phone 2 with phone 1 and vice versa
+        myCellPhone1.dial(myCellPhone2.getPhoneNumber());
+        myCellPhone2.dial(myCellPhone1.getPhoneNumber());
 
         infoScanner.close();
     }
